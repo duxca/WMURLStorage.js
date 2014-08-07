@@ -1,7 +1,7 @@
 {
   "name":           "legokichi.urlstorage.js",
-  "version":        "0.1.1",
-  "description":    "Module template for Mobile Web Application.",
+  "version":        "0.1.2",
+  "description":    "Online Storage using goo.gl URL Shortener API.",
   "url":            "https://github.com/legokichi/URLStorage.js",
   "keywords":       ["legokichi", "WebModule", "Unstable"],
   "repository": {
