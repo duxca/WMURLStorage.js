@@ -21,18 +21,18 @@ function test_URLStorage(test, pass, miss) {
         Valid(Valid.type(err, "Error|null"), test_URLStorage, "err");
         Valid(Valid.type(shortUrl, "String"), test_URLStorage, "shortUrl");
         if(!!err){
-            return test.done(miss(err));
+            return test.done(miss(err.message));
         }
-        new URLStorage().load(url, function(err, str){
+        new URLStorage().load(shortUrl, function(err, str){
             Valid(Valid.type(err, "Error|null"), test_URLStorage, "err");
             Valid(Valid.type(str, "String"), test_URLStorage, "str");
             if(!!err){
-                return test.done(miss(err));
+                return test.done(miss(err.message));
             }
             if(originalStr === str){
-                test.done(pass(JSON.storingify(str)));
+                test.done(pass(JSON.stringify(str)));
             }else{
-                test.done(miss(JSON.storingify(str)));
+                test.done(miss(JSON.stringify(str)));
             }
         });
     });
