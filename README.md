@@ -19,8 +19,7 @@ Online Storage using [goo.gl](http://goo.gl/) URL Shortener API.
 <script src="vender/jszip.js"></script>
 <script src="lib/URLStorage.js"></script>
 <script>
-var json = {a:0, b:"1", c:false};
-new URLStorage().save(json, function(err, url){
+new URLStorage().save("🍣🍣🍣", function(err, url){
     console.log(url);
 });
 </script>
@@ -32,8 +31,7 @@ new URLStorage().save(json, function(err, url){
 importScripts("vender/jszip.js");
 importScripts("lib/URLStorage.js");
 
-var json = {a:0, b:"1", c:false};
-new URLStorage().save(json, function(err, url){
+new URLStorage().save("🍣🍣🍣", function(err, url){
     console.log(url);
 });
 ```

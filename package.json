@@ -1,6 +1,6 @@
 {
   "name":           "legokichi.urlstorage.js",
-  "version":        "0.0.1",
+  "version":        "0.0.2",
   "description":    "Module template for Mobile Web Application.",
   "url":            "https://github.com/legokichi/URLStorage.js",
   "keywords":       ["legokichi", "WebModule", "Unstable"],
