@@ -2,7 +2,7 @@
 
 [![npm](https://nodei.co/npm/legokichi.urlstorage.js.png?downloads=true&stars=true)](https://nodei.co/npm/legokichi.urlstorage.js/)
 
-URLStorage.js description.
+Online Storage using [goo.gl](http://goo.gl/) URL Shortener API.
 
 ## Document
 
@@ -18,7 +18,10 @@ URLStorage.js description.
 ```js
 <script src="lib/URLStorage.js">
 <script>
-console.log( URLStorage() );
+var json = {a:0, b:"1", c:false};
+new URLStorage().save(json, function(err, url){
+    console.log(url);
+});
 </script>
 ```
 
@@ -27,5 +30,8 @@ console.log( URLStorage() );
 ```js
 importScripts("lib/URLStorage.js");
 
-console.log( URLStorage() );
+var json = {a:0, b:"1", c:false};
+new URLStorage().save(json, function(err, url){
+    console.log(url);
+});
 ```
