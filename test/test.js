@@ -16,23 +16,23 @@ return new Test("URLStorage", {
     ]).run().clone();
 
 function test_URLStorage(test, pass, miss) {
-    var json = {};
-    new URLStorage().save(json, function(err, shortUrl){
+    var originalStr = "🍣🍣🍣";
+    new URLStorage().save(originalStr, function(err, shortUrl){
         Valid(Valid.type(err, "Error|null"), test_URLStorage, "err");
         Valid(Valid.type(shortUrl, "String"), test_URLStorage, "shortUrl");
         if(!!err){
             return test.done(miss(err));
         }
-        new URLStorage().load(url, function(err, _json){
+        new URLStorage().load(url, function(err, str){
             Valid(Valid.type(err, "Error|null"), test_URLStorage, "err");
-            Valid(Valid.type(_json, "JSON"), test_URLStorage, "_json");
+            Valid(Valid.type(str, "String"), test_URLStorage, "str");
             if(!!err){
                 return test.done(miss(err));
             }
-            if(JSON.storingify(json) === JSON.storingify(_json)){
-                test.done(pass(JSON.storingify(_json)));
+            if(originalStr === str){
+                test.done(pass(JSON.storingify(str)));
             }else{
-                test.done(miss(JSON.storingify(_json)));
+                test.done(miss(JSON.storingify(str)));
             }
         });
     });

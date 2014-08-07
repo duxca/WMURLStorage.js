@@ -15,49 +15,49 @@ __report = {
           "line": 1,
           "complexity": {
             "sloc": {
-              "physical": 147,
-              "logical": 85
+              "physical": 128,
+              "logical": 73
             },
-            "cyclomatic": 16,
+            "cyclomatic": 14,
             "halstead": {
               "operators": {
                 "distinct": 22,
-                "total": 240,
+                "total": 223,
                 "identifiers": [
                   "__stripped__"
                 ]
               },
               "operands": {
-                "distinct": 91,
-                "total": 309,
+                "distinct": 86,
+                "total": 278,
                 "identifiers": [
                   "__stripped__"
                 ]
               },
-              "length": 549,
-              "vocabulary": 113,
-              "difficulty": 37.35164835164835,
-              "volume": 3744.2782503659387,
-              "effort": 139854.9645383937,
-              "bugs": 1.2480927501219796,
-              "time": 7769.720252132983
+              "length": 501,
+              "vocabulary": 108,
+              "difficulty": 35.55813953488372,
+              "volume": 3384.198638583898,
+              "effort": 120335.80740452978,
+              "bugs": 1.1280662128612995,
+              "time": 6685.322633584988
             },
-            "params": 36
+            "params": 27
           }
         },
         "module": "lib/URLStorage.js",
-        "maintainability": 73.76464890189162
+        "maintainability": 72.31843989898265
       }
     }
   ],
   "summary": {
     "total": {
-      "sloc": 147,
-      "maintainability": 73.76464890189162
+      "sloc": 128,
+      "maintainability": 72.31843989898265
     },
     "average": {
-      "sloc": 147,
-      "maintainability": "73.76"
+      "sloc": 128,
+      "maintainability": "72.32"
     }
   }
 }
