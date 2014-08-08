@@ -12,11 +12,11 @@ onmessage = function(event) {
     importScripts(MESSAGE.BASE_DIR + "../node_modules/uupaa.valid.js/lib/Valid.js");
     importScripts(MESSAGE.BASE_DIR + "../node_modules/uupaa.task.js/lib/Task.js");
     importScripts(MESSAGE.BASE_DIR + "../node_modules/uupaa.test.js/lib/Test.js");
-    importScripts(MESSAGE.BASE_DIR + "../node_modules/legokichi.urlshortener.js/lib/URLShortener.js");
-    importScripts(MESSAGE.BASE_DIR + "../vender/jszip.min.js");
-    importScripts(MESSAGE.BASE_DIR + "../lib/URLStorage.js");
-    importScripts(MESSAGE.BASE_DIR + "../release/URLStorage.min.js");
-    importScripts(MESSAGE.BASE_DIR + "./test.js?_=1407404503562");
+    importScripts(MESSAGE.BASE_DIR + "../node_modules/legokichi.urlshortener.js/lib/WebModule.URLShortener.js");
+    importScripts(MESSAGE.BASE_DIR + "../node_modules/legokichi.jszip.js/lib/WebModule.JSZip.js");
+    importScripts(MESSAGE.BASE_DIR + "../lib/WebModule.URLStorage.js");
+    importScripts(MESSAGE.BASE_DIR + "../release/WebModule.URLStorage.min.js");
+    importScripts(MESSAGE.BASE_DIR + "./test.js?_=1407478524016");
 
     self.postMessage({ error: self.errorMessage || "" });
 };
@@ -28,10 +28,10 @@ onmessage = function(event) {
 <script src="../node_modules/uupaa.valid.js/lib/Valid.js"></script>
 <script src="../node_modules/uupaa.task.js/lib/Task.js"></script>
 <script src="../node_modules/uupaa.test.js/lib/Test.js"></script>
-<script src="../node_modules/legokichi.urlshortener.js/lib/URLShortener.js"></script>
-<script src="../vender/jszip.min.js"></script>
-<script src="../lib/URLStorage.js"></script>
-<script src="../release/URLStorage.min.js"></script>
-<script src="./test.js?=_1407404503562"></script>
+<script src="../node_modules/legokichi.urlshortener.js/lib/WebModule.URLShortener.js"></script>
+<script src="../node_modules/legokichi.jszip.js/lib/WebModule.JSZip.js"></script>
+<script src="../lib/WebModule.URLStorage.js"></script>
+<script src="../release/WebModule.URLStorage.min.js"></script>
+<script src="./test.js?=_1407478524016"></script>
 
 </body></html>

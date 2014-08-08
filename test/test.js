@@ -4,6 +4,8 @@ var _runOnNode = "process" in global;
 var _runOnWorker = "WorkerLocation" in global;
 var _runOnBrowser = "document" in global;
 
+var URLStorage = WebModule.URLStorage;
+
 return new Test("URLStorage", {
         disable:    false,
         browser:    true,

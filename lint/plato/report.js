@@ -2,10 +2,10 @@ __report = {
   "reports": [
     {
       "info": {
-        "file": "lib/URLStorage.js",
-        "fileShort": "lib/URLStorage.js",
-        "fileSafe": "lib_URLStorage_js",
-        "link": "files/lib_URLStorage_js/index.html"
+        "file": "lib/WebModule.URLStorage.js",
+        "fileShort": "lib/WebModule.URLStorage.js",
+        "fileSafe": "lib_WebModule_URLStorage_js",
+        "link": "files/lib_WebModule_URLStorage_js/index.html"
       },
       "jshint": {
         "messages": 0
@@ -15,49 +15,49 @@ __report = {
           "line": 1,
           "complexity": {
             "sloc": {
-              "physical": 128,
-              "logical": 73
+              "physical": 138,
+              "logical": 77
             },
             "cyclomatic": 14,
             "halstead": {
               "operators": {
                 "distinct": 22,
-                "total": 225,
+                "total": 245,
                 "identifiers": [
                   "__stripped__"
                 ]
               },
               "operands": {
-                "distinct": 87,
-                "total": 280,
+                "distinct": 92,
+                "total": 295,
                 "identifiers": [
                   "__stripped__"
                 ]
               },
-              "length": 505,
-              "vocabulary": 109,
-              "difficulty": 35.40229885057472,
-              "volume": 3417.9330840123475,
-              "effort": 121002.68849147162,
-              "bugs": 1.1393110280041159,
-              "time": 6722.371582859534
+              "length": 540,
+              "vocabulary": 114,
+              "difficulty": 35.27173913043478,
+              "volume": 3689.7606076489606,
+              "effort": 130144.27360674865,
+              "bugs": 1.2299202025496536,
+              "time": 7230.237422597147
             },
-            "params": 27
+            "params": 30
           }
         },
-        "module": "lib/URLStorage.js",
-        "maintainability": 72.30917299311054
+        "module": "lib/WebModule.URLStorage.js",
+        "maintainability": 74.26068316613271
       }
     }
   ],
   "summary": {
     "total": {
-      "sloc": 128,
-      "maintainability": 72.30917299311054
+      "sloc": 138,
+      "maintainability": 74.26068316613271
     },
     "average": {
-      "sloc": 128,
-      "maintainability": "72.31"
+      "sloc": 138,
+      "maintainability": "74.26"
     }
   }
 }

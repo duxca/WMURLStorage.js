@@ -97,5 +97,71 @@ __history = [
       "sloc": 128,
       "maintainability": "72.31"
     }
+  },
+  {
+    "date": "Fri, 08 Aug 2014 04:19:32 GMT",
+    "total": {
+      "sloc": 128,
+      "maintainability": 72.31363804260305
+    },
+    "average": {
+      "sloc": 128,
+      "maintainability": "72.31"
+    }
+  },
+  {
+    "date": "Fri, 08 Aug 2014 06:07:51 GMT",
+    "total": {
+      "sloc": 137,
+      "maintainability": 74.42160280849914
+    },
+    "average": {
+      "sloc": 137,
+      "maintainability": "74.42"
+    }
+  },
+  {
+    "date": "Fri, 08 Aug 2014 06:11:36 GMT",
+    "total": {
+      "sloc": 138,
+      "maintainability": 74.25455576546446
+    },
+    "average": {
+      "sloc": 138,
+      "maintainability": "74.25"
+    }
+  },
+  {
+    "date": "Fri, 08 Aug 2014 06:12:42 GMT",
+    "total": {
+      "sloc": 138,
+      "maintainability": 74.25369572103438
+    },
+    "average": {
+      "sloc": 138,
+      "maintainability": "74.25"
+    }
+  },
+  {
+    "date": "Fri, 08 Aug 2014 06:25:56 GMT",
+    "total": {
+      "sloc": 138,
+      "maintainability": 74.26068316613271
+    },
+    "average": {
+      "sloc": 138,
+      "maintainability": "74.26"
+    }
+  },
+  {
+    "date": "Fri, 08 Aug 2014 06:28:49 GMT",
+    "total": {
+      "sloc": 138,
+      "maintainability": 74.26068316613271
+    },
+    "average": {
+      "sloc": 138,
+      "maintainability": "74.26"
+    }
   }
 ]
