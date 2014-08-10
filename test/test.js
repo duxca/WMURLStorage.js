@@ -4,7 +4,7 @@ var _runOnNode = "process" in global;
 var _runOnWorker = "WorkerLocation" in global;
 var _runOnBrowser = "document" in global;
 
-var URLStorage = WebModule.URLStorage;
+var URLStorage = WMURLStorage;
 
 return new Test("URLStorage", {
         disable:    false,
@@ -12,13 +12,14 @@ return new Test("URLStorage", {
         worker:     false,
         node:       false,
         button:     true,
-        both:       false, // test the primary module and secondary module
+        both:       true, // test the primary module and secondary module
     }).add([
         test_URLStorage,
     ]).run().clone();
 
 function test_URLStorage(test, pass, miss) {
     var originalStr = "🍣🍣🍣";
+    for(var i=0;i<100000;i++){ originalStr+=Math.random()*10|0;}
     new URLStorage().save(originalStr, function(err, shortUrl){
         Valid(Valid.type(err, "Error|null"), test_URLStorage, "err");
         Valid(Valid.type(shortUrl, "String"), test_URLStorage, "shortUrl");

@@ -1,12 +1,12 @@
 {
-  "name":           "legokichi.urlstorage.js",
-  "version":        "0.2.0",
+  "name":           "legokichi.wmurlstorage.js",
+  "version":        "0.3.0",
   "description":    "Online Storage using goo.gl URL Shortener API.",
-  "url":            "https://github.com/legokichi/WebModule.URLStorage.js",
+  "url":            "https://github.com/legokichi/WMURLStorage.js",
   "keywords":       ["legokichi", "WebModule", "Unstable"],
   "repository": {
     "type":         "git",
-    "url":          "https://github.com/legokichi/WebModule.URLStorage.js.git"
+    "url":          "https://github.com/legokichi/WMURLStorage.js.git"
   },
   "scripts": {
     "watch":        "node node_modules/uupaa.watch.js --verbose --action build",
@@ -26,18 +26,18 @@
     "lint":         "node node_modules/uupaa.plato.js; open lint/plato/index.html"
   },
   "x-build": {
-    "source":       ["lib/WebModule.URLStorage.js"],
-    "output":       "release/WebModule.URLStorage.min.js",
+    "source":       ["lib/WMURLStorage.js"],
+    "output":       "release/WMURLStorage.min.js",
     "target":       ["Browser", "Worker"],
     "label":        ["@dev"],
     "module": {
       "develop":    ["uupaa.valid.js"],
-      "release":    ["legokichi.jszip.js", "legokichi.urlshortener.js"]
+      "release":    ["legokichi.wmjszip.js", "legokichi.wmurlshortener.js"]
     }
   },
   "dependencies": {
-    "legokichi.urlshortener.js": "",
-    "legokichi.jszip.js": ""
+    "legokichi.wmjszip.js": "",
+    "legokichi.wmurlshortener.js": ""
   },
   "devDependencies": {
     "uupaa.nodemodule.js": "",
