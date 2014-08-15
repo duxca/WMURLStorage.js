@@ -1,6 +1,6 @@
 {
   "name":           "legokichi.wmurlstorage.js",
-  "version":        "0.3.0",
+  "version":        "0.3.1",
   "description":    "Online Storage using goo.gl URL Shortener API.",
   "url":            "https://github.com/legokichi/WMURLStorage.js",
   "keywords":       ["legokichi", "WebModule", "Unstable"],
