@@ -1,14 +1,15 @@
 {
-  "name":           "legokichi.wmurlstorage.js",
-  "version":        "0.3.1",
+  "name":           "duxca.wmurlstorage.js",
+  "version":        "0.4.0",
   "description":    "Online Storage using goo.gl URL Shortener API.",
-  "url":            "https://github.com/legokichi/WMURLStorage.js",
-  "keywords":       ["legokichi", "WebModule", "Unstable"],
+  "url":            "https://github.com/duxca/WMURLStorage.js",
+  "keywords":       ["duxca", "WebModule", "Unstable"],
   "repository": {
     "type":         "git",
-    "url":          "https://github.com/legokichi/WMURLStorage.js.git"
+    "url":          "https://github.com/duxca/WMURLStorage.js.git"
   },
   "scripts": {
+    "init":         "npm update; npm run build; npm run test-page",
     "watch":        "node node_modules/uupaa.watch.js --verbose --action build",
     "build":        "node node_modules/uupaa.minify.js --verbose --strict --keep --pretty",
     "build-simple": "node node_modules/uupaa.minify.js --verbose --strict --keep --pretty --nowrap --simple",
@@ -22,22 +23,29 @@
     "server":       "http-server -c-1 -p 8585 &",
     "server-stop":  "",
     "server-kill":  "killall -- node /usr/local/bin/http-server -p 8585 ; exit 0",
+    "patch":        "node node_modules/uupaa.webmoduleutility.js/index.js --patched",
     "hint":         "jshint lib/*.js",
-    "lint":         "node node_modules/uupaa.plato.js; open lint/plato/index.html"
+    "lint":         "npm run coverage",
+    "coverage":     "node node_modules/uupaa.plato.js; open lint/plato/index.html"
   },
   "x-build": {
     "source":       ["lib/WMURLStorage.js"],
     "output":       "release/WMURLStorage.min.js",
-    "target":       ["Browser", "Worker"],
+    "target":       ["all"],
     "label":        ["@dev"],
     "module": {
       "develop":    ["uupaa.valid.js"],
-      "release":    ["legokichi.wmjszip.js", "legokichi.wmurlshortener.js"]
+      "release":    [
+        "uupaa.task.js",
+        "duxca.wmjszip.js",
+        "duxca.wmurlshortener.js"
+      ]
     }
   },
   "dependencies": {
-    "legokichi.wmjszip.js": "",
-    "legokichi.wmurlshortener.js": ""
+    "uupaa.task.js": "",
+    "duxca.wmjszip.js": "",
+    "duxca.wmurlshortener.js": ""
   },
   "devDependencies": {
     "uupaa.nodemodule.js": "",
@@ -50,11 +58,12 @@
     "uupaa.test.js":    "",
     "uupaa.watch.js":   "",
     "uupaa.plato.js":   "",
-    "uupaa.minify.js":  ""
+    "uupaa.minify.js":  "",
+    "uupaa.webmoduleutility.js": ""
   },
   "lib":            "./lib/",
   "main":           "./index.js",
-  "author":         "legokichi <legokichi@gmail.com>",
+  "author":         "duxca",
   "license":        "MIT",
   "contributors":   []
 }

@@ -9,8 +9,8 @@ var URLStorage = WMURLStorage;
 return new Test("URLStorage", {
         disable:    false,
         browser:    true,
-        worker:     false,
-        node:       false,
+        worker:     true,
+        node:       true,
         button:     true,
         both:       true, // test the primary module and secondary module
     }).add([

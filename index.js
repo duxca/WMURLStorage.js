@@ -1,3 +1,3 @@
-//module.exports = require("./bin/URLStorage");
-module.exports = require("./lib/URLStorage");
+//module.exports = require("./bin/WMURLStorage");
+module.exports = require("./lib/WMURLStorage");
 
