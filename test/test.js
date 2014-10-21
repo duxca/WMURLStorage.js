@@ -12,14 +12,14 @@ return new Test("URLStorage", {
         worker:     true,
         node:       true,
         button:     true,
-        both:       true, // test the primary module and secondary module
+        both:       false, // test the primary module and secondary module
     }).add([
         test_URLStorage,
     ]).run().clone();
 
 function test_URLStorage(test, pass, miss) {
     var originalStr = "🍣🍣🍣";
-    for(var i=0;i<100000;i++){ originalStr+=Math.random()*10|0;}
+    for(var i=0;i<10000;i++){ originalStr+=Math.random()*10|0;}
     new URLStorage().save(originalStr, function(err, shortUrl){
         Valid(Valid.type(err, "Error|null"), test_URLStorage, "err");
         Valid(Valid.type(shortUrl, "String"), test_URLStorage, "shortUrl");

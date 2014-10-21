@@ -43,7 +43,6 @@
     }
   },
   "dependencies": {
-    "uupaa.task.js": "",
     "duxca.wmjszip.js": "",
     "duxca.wmurlshortener.js": ""
   },
