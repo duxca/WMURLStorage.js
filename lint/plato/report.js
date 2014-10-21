@@ -16,48 +16,48 @@ __report = {
           "complexity": {
             "sloc": {
               "physical": 210,
-              "logical": 127
+              "logical": 131
             },
             "cyclomatic": 26,
             "halstead": {
               "operators": {
                 "distinct": 26,
-                "total": 343,
+                "total": 351,
                 "identifiers": [
                   "__stripped__"
                 ]
               },
               "operands": {
-                "distinct": 117,
-                "total": 430,
+                "distinct": 118,
+                "total": 442,
                 "identifiers": [
                   "__stripped__"
                 ]
               },
-              "length": 773,
-              "vocabulary": 143,
-              "difficulty": 47.77777777777778,
-              "volume": 5534.580543329695,
-              "effort": 264429.95929241873,
-              "bugs": 1.8448601811098981,
-              "time": 14690.553294023262
+              "length": 793,
+              "vocabulary": 144,
+              "difficulty": 48.69491525423729,
+              "volume": 5685.7505261437545,
+              "effort": 276867.14002730517,
+              "bugs": 1.8952501753812516,
+              "time": 15381.507779294732
             },
             "params": 46
           }
         },
         "module": "lib/WMURLStorage.js",
-        "maintainability": 71.85598530916153
+        "maintainability": 71.46755080369083
       }
     }
   ],
   "summary": {
     "total": {
       "sloc": 210,
-      "maintainability": 71.85598530916153
+      "maintainability": 71.46755080369083
     },
     "average": {
       "sloc": 210,
-      "maintainability": "71.86"
+      "maintainability": "71.47"
     }
   }
 }
