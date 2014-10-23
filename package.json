@@ -1,6 +1,6 @@
 {
   "name":           "duxca.wmurlstorage.js",
-  "version":        "0.4.1",
+  "version":        "1.0.0",
   "description":    "Online Storage using goo.gl URL Shortener API.",
   "url":            "https://github.com/duxca/WMURLStorage.js",
   "keywords":       ["duxca", "WebModule", "Unstable"],
@@ -31,20 +31,20 @@
   "x-build": {
     "source":       ["lib/WMURLStorage.js"],
     "output":       "release/WMURLStorage.min.js",
-    "target":       ["all"],
+    "target":       ["browser", "worker"],
     "label":        ["@dev"],
     "module": {
       "develop":    ["uupaa.valid.js"],
       "release":    [
-        "uupaa.task.js",
-        "duxca.wmjszip.js",
+        "uupaa.base64.js",
+        "uupaa.datatype.js",
         "duxca.wmurlshortener.js"
       ]
     }
   },
   "dependencies": {
-    "uupaa.task.js": "",
-    "duxca.wmjszip.js": "",
+    "uupaa.base64.js": "",
+    "uupaa.datatype.js": "",
     "duxca.wmurlshortener.js": ""
   },
   "devDependencies": {
